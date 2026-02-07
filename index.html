@@ -1,22 +1,24 @@
-<!doctypehtml>
-    <html lang=en>
-    <meta charset=UTF-8>
-    <meta content="width=device-width,initial-scale=1,viewport-fit=cover" name=viewport>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
     <title>Dogpile</title>
     <style>
         * {
             margin: 0;
             padding: 0;
-            box-sizing: border-box
+            box-sizing: border-box;
         }
 
-        body,
-        html {
+        html,
+        body {
             width: 100%;
             height: 100%;
             overflow: hidden;
             background: #000;
-            overscroll-behavior: none
+            overscroll-behavior: none;
         }
 
         canvas {
@@ -26,7 +28,7 @@
             left: 0;
             width: 100%;
             height: 100%;
-            touch-action: none
+            touch-action: none;
         }
 
         #t {
@@ -117,8 +119,8 @@
 
         @media(hover:none)and (pointer:coarse) {
 
-            #jp,
-            #jz {
+            #jz,
+            #jp {
                 display: block
             }
 
@@ -156,13 +158,21 @@
             display: none !important
         }
     </style>
-    <div id=t class=h>
-        <div id=tf></div>
+</head>
+
+<body>
+    <div id="t" class="h">
+        <div id="tf"></div>
     </div>
-    <div id=gc class=h>Ghosts: 0/8</div>
-    <div id=jz class=h>
-        <div id=jb>
-            <div id=jk></div>
+    <div id="gc" class="h">Ghosts: 0/8</div>
+    <div id="jz" class="h">
+        <div id="jb">
+            <div id="jk"></div>
         </div>
-    </div><button class=h id=jp>JUMP</button><canvas id=c></canvas>
-    <script src=src/main.js type=module></script>
+    </div>
+    <button id="jp" class="h">JUMP</button>
+    <canvas id="c"></canvas>
+    <script type="module" src="bundle.min.js"></script>
+</body>
+
+</html>
